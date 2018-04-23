@@ -1170,7 +1170,7 @@ html.export {
 
 body {
   color: #626262;
-  background: #262524;
+  background: #23D6F0;
 }
 
 /* ---- links ---- */
@@ -1189,7 +1189,7 @@ a:hover code {
 a:active,
 a:active code {
   color: #1FB;
-  background: #161615;
+  background: #23D6F0;
 }
 
 /* ---- headers ---- */

@@ -431,11 +431,11 @@ body.sidenav-toggled .navbar-sidenav-tooltip.show {
     background: #f8f9fa;
   }
   #mainNav.navbar-light .navbar-collapse .navbar-sidenav li.active a {
-    color: #000 !important;
+    color: #ffffff !important;
     background-color: #e9ecef;
   }
   #mainNav.navbar-light .navbar-collapse .navbar-sidenav li.active a:focus, #mainNav.navbar-light .navbar-collapse .navbar-sidenav li.active a:hover {
-    color: #000;
+    color: #ffffff;
   }
   #mainNav.navbar-light .navbar-collapse .navbar-sidenav > .nav-item .sidenav-second-level,
   #mainNav.navbar-light .navbar-collapse .navbar-sidenav > .nav-item .sidenav-third-level {

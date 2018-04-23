@@ -56,6 +56,47 @@
           
             <span class="nav-link-text">Pantry</span>
           </a>
+               
+               
+               
+            <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle mr-lg-2" id="alertsDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            
+            <span class="d-lg-none">Alerts
+              <span class="badge badge-pill badge-warning">2 New</span>
+            </span>
+            <span class="indicator text-warning d-none d-lg-block">
+              <i class="fa fa-fw fa-circle"></i> 
+            </span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="alertsDropdown">
+            
+            
+            <a class="dropdown-item" href="#">
+              <span class="text-danger">
+                <strong>Epiring Soon</strong>
+              </span>
+              <span class="small float-right text-muted">1:45 PM</span>
+              <div class="dropdown-message small">Your salmon will expire in 1 day.</div>
+            </a>
+            
+            <a class="dropdown-item" href="#">
+              <span class="text-danger">
+                <strong>Running Low</strong>
+              </span>
+              <span class="small float-right text-muted">3:15 PM</span>
+              <div class="dropdown-message small">Only 75/700 grams of bacon left.</div>
+            </a>  
+              
+          </div>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="modal" data-target="#exampleModal">Logout</a>
+        </li>
+               
+               
+               
         </li>
           
           
@@ -266,7 +307,8 @@
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h3 class="modal-title" id="exampleModalLongTitle">Add Food Item</h3>
+        <h3 class="modal-title" id="exampleModalLongTitle">Add Food</h3> -
+      
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -277,39 +319,60 @@
           
           <div class="card-body">
         <form>
-          <div class="form-group">
+          
             <div class="form-row">
               <div class="col-md-6">
-                <label for="exampleInputName">Item Name</label>
-                <input class="form-control" id="exampleInputName" type="text" aria-describedby="nameHelp" placeholder="Enter the name of the food item">
+                <label for="exampleInputEmail1">Item Name</label>
+                <input class="form-control" id="exampleInputName" type="text" aria-describedby="nameHelp" placeholder="Avocado">
               </div>
+            </div>  
+              
+              
+              
+                
+            <div class="form-group">   
+             <div class="form-row">    
               <div class="col-md-6">
                 <label for="exampleInputLastName">Quantity</label>
-                <input class="form-control" id="exampleInputLastName" type="text" aria-describedby="nameHelp" placeholder="Enter last name">
+                <input class="form-control" id="exampleInputLastName" type="text" aria-describedby="nameHelp" placeholder="900/900 grams">
               </div>
             </div>
-          </div>
-            
-            
-            
-          <div class="form-group">
+          
+               
+       
             <label for="exampleInputEmail1">Expiration</label>
-            <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Enter email">
-          </div>
+            <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="6 days">
+                
             
-          <div class="form-group">
-            <div class="form-row">
-              <div class="col-md-6">
-                <label for="exampleInputPassword1">Password</label>
-                <input class="form-control" id="exampleInputPassword1" type="password" placeholder="Password">
-              </div>
-              <div class="col-md-6">
-                <label for="exampleConfirmPassword">Confirm password</label>
-                <input class="form-control" id="exampleConfirmPassword" type="password" placeholder="Confirm password">
-              </div>
-            </div>
-          </div>
+       
+                
+                
+                
+                <div class="dropdown">
+  <label for="exampleInputEmail1">Category</label>
+                    
+  <input class="form-control dropdown-toggle" type="email" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" placeholder="Fruit">
+  
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Fruit</a>
+    <a class="dropdown-item" href="#">Vegetable</a>
+    <a class="dropdown-item" href="#">Meat</a>
+    <a class="dropdown-item" href="#">Dairy</a>
+    <a class="dropdown-item" href="#">Snack</a>
+    <a class="dropdown-item" href="#">Dry Food</a> 
+    <a class="dropdown-item" href="#">Seafood</a>  
+  </div>
+</div>
+                
+                
+                
+                
+                
+                
+        <!--    <label for="exampleInputEmail1">Category</label>
+            <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Enter email"> -->
          
+         </div>
         </form>
         
       </div>
@@ -321,8 +384,8 @@
         <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Cancel</button>
         <!--<button class="insert-button btn-primary">Add</button> -->
           
-          
-      <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Add item</button>
+                                                    
+          <button type="button" class="btn btn-primary btn-sm"><a href="added.html">Add Item</a></button>
       </div>
     </div>
   </div>
@@ -335,13 +398,76 @@
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h3> Strawberries</h3>
+        <h3> Edit Item</h3>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        ...
+    
+          
+          
+             <div class="card-body">
+        <form>
+          
+            <div class="form-row">
+              <div class="col-md-6">
+                <label for="exampleInputEmail1">Item Name</label>
+                <input class="form-control" id="exampleInputName" type="text" aria-describedby="nameHelp" placeholder="Strawberries">
+              </div>
+            </div>  
+              
+              
+              
+                
+            <div class="form-group">   
+             <div class="form-row">    
+              <div class="col-md-6">
+                <label for="exampleInputLastName">Quantity</label>
+                <input class="form-control" id="exampleInputLastName" type="text" aria-describedby="nameHelp" placeholder="300/600 grams">
+              </div>
+            </div>
+          
+               
+       
+            <label for="exampleInputEmail1">Expiration</label>
+            <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="6 days">
+                
+            
+       
+                
+                
+                
+                <div class="dropdown">
+  <label for="exampleInputEmail1">Category</label>
+                    
+  <input class="form-control dropdown-toggle" type="email" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" placeholder="Fruit">
+  
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Fruit</a>
+    <a class="dropdown-item" href="#">Vegetable</a>
+    <a class="dropdown-item" href="#">Meat</a>
+    <a class="dropdown-item" href="#">Dairy</a>
+    <a class="dropdown-item" href="#">Snack</a>
+    <a class="dropdown-item" href="#">Dry Food</a> 
+    <a class="dropdown-item" href="#">Seafood</a>  
+  </div>
+</div>
+                
+                
+                
+                
+                
+                
+        <!--    <label for="exampleInputEmail1">Category</label>
+            <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Enter email"> -->
+         
+         </div>
+        </form>
+        
+      </div>
+          
+          
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
@@ -393,6 +519,18 @@
           
 
   <div class="grid">
+      
+      
+          <div class="element-item fruit " data-category="fruit" data-toggle="modal" data-target="#editmodal">
+        <h5 class="name">Avocados</h5>      
+          <p class="symbol"><img src= img/avo.jpg width="45px;" style="border-radius:50px;"></p>  
+        <p class="type">Fruit</p>      
+        <p class="bar"><img src= img/100.png ></p>   
+        <p class="weight">900/900 grams</p>  
+        <p class="number">6 Days Left</p>   
+      </div>
+      
+      
       
       <div class="element-item fruit " data-category="fruit" data-toggle="modal" data-target="#editmodal">
         <h5 class="name">Strawberries</h5>      
@@ -512,7 +650,7 @@
       </div>
       
       <div class="element-item dairy " data-category="transition">
-        <h5 class="name">Cheddar Cheese</h5>
+        <h5 class="name">Cheddar</h5>
         <p class="symbol"><img src= img/cheddar.jpg width="45px;" style="border-radius:50px;"></p>  
         <!--<p class="symbol"><img src= img/lettuce.jpg width="45px;"></p> -->
          <p class="type">Dairy</p>
@@ -565,7 +703,7 @@
       </div>
       
       <div class="element-item dairy " data-category="dairy">
-        <h5 class="name">Mozzarella Cheese</h5>
+        <h5 class="name">Mozzarella</h5>
          <p class="symbol"><img src= img/mozz.jpg width="45px;" style="border-radius:50px;"></p>  
         <!--<p class="symbol"><img src= img/lettuce.jpg width="45px;"></p> -->
          <p class="type">Dairy</p>
@@ -896,12 +1034,12 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <h3 class="modal-title" id="exampleModalLabel">Logout</h3>
             <button class="close" type="button" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">×</span>
             </button>
           </div>
-          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+          <div class="modal-body">Press the "Logout" button below if you are ready to end your session.</div>
           <div class="modal-footer">
             <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
             <a class="btn btn-primary" href="login.html">Logout</a>
