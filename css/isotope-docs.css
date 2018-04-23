@@ -91,6 +91,15 @@ progress {
   vertical-align: baseline;
 }
 
+
+.badge-warning {
+ 
+background-color: #00C4E0;
+color: white;    
+    
+}
+
+
 /**
  * Add the correct display in IE 10-.
  * 1. Add the correct display in IE.
